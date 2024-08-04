@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+/* general */
+:root {
+    --white-color: #f4f4f4;
+    --black-color: #252525;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Lora", sserif;
+    background-color: var(--white-color);
+    color: var(--black-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+body {
+    margin: 16px 0;
+    max-width: 960px;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--black-color);
+}
+/* barra de navegacion */
+#nav {
+    padding: 16px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f8ffe5;
+    border-radius: 25px;
+    width: 100%;
+}
+
+#navlinks {
+    display: flex;
+    gap: 16px;
+}
+/* main */
+#siteBody {
+    width: 960px;
+    padding: 64px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    width: 100%;
+}
+
+.blog {
+    font-size: 30px;
+    background-color: #f8ffe5;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.blog h1, h3 {
+    padding-top: 20px;
+}
+
+#Autor {
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+/* Media Queries para Responsividad */
+@media only screen and (max-width: 800px) {
+    #nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 8px 16px;
+    }
+
+    #navlinks {
+        display: none;
+    }
+
+    #siteBody {
+        padding: 32px 16px;
+        gap: 32px;
+    }
+
+    .blog {
+        font-size: 24px;
+    }
+}
